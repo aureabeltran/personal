@@ -1,0 +1,218 @@
+header{
+	.navbar-default{
+		margin: 0%;
+		background-color: $main-green;
+		.navbar-header{
+			a{
+				color: white;
+				&:hover{
+					color: white;
+					background-color: darken($main-green, 20%);
+					font-weight: bold;
+				}
+			}
+		}
+		h3{
+			margin: 0%;
+			padding: 10px;
+			color: white;
+			font-weight: bold;
+			img{
+				font-size: 30px;
+			}
+		}	
+		.navbar-nav{
+			li{
+				a{
+					color: white;
+					&:hover{
+						color: white;
+						background-color: darken($main-green, 20%);
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+#bg-image{
+	background-image: url(../images/back-lock.jpg);
+	background-size: cover;
+	width:100%;
+	height: 500px;
+	text-align: center;
+	color: white;
+	position: relative;
+	&::before{
+	   background-color: rgba(0, 0, 0,0.57); 
+	   width: 100%;
+	   height: 500px;
+	   content: '';
+  		display: block;
+	   position: absolute;
+	}
+	h1{
+		font-size: 70px;
+		font-weight: bold;
+		padding: 5% 0%;
+	}
+	h3{
+		font-size: 40px;
+		font-weight: bold;
+	}
+}
+#individual{
+	p{
+		margin: 25px 0px;
+	}
+	img{
+		max-width: 100%;
+	}
+}
+#title{
+	background-image: url(../images/bg3.jpg);
+	background-size: cover;
+	width:100%;
+	height: 500px;
+	color: white;
+	position: relative;
+	&::before{
+	   background-color: rgba(0, 0, 0,0.57); 
+	   width: 100%;
+	   height: 500px;
+	   content: '';
+  		display: block;
+	   position: absolute;
+	}
+	.text-padding{
+		padding-top: 20%;
+		hr{
+			background-color: white;
+		}
+	}
+	video{
+		width: 100%;
+		height: 300px;
+		margin-top: 20%;
+	}
+}
+#define{
+	img{
+		max-width: 100%;
+	}
+}
+#offers{
+	.target{
+		border: 3px solid transparent;
+		text-align: center;
+		background-color: $main-gray;
+		&:hover{
+			border: 3px solid $main-gray;
+			background-color: lighten($main-gray, 15%);	
+		}
+		h4{	
+			padding: 10px 0px 10px 0px;
+			font-size: 25px;
+			font-weight: bold;
+			color: darken($main-gray, 20%);
+		}
+		h3{
+			padding: 10px 0px 10px 0px;
+			font-weight: bolder;
+			border-bottom: 1px solid darken($main-gray,10%);
+		}
+		img{
+			max-width: 100%;
+		}
+		.border{
+			border-left: 1px solid darken($main-gray,10%);
+		}
+		.border-top{
+			border-top: 1px solid darken($main-gray,10%);
+			margin: 0px 2px;
+		}
+		p{
+			font-size: 13px;
+		}
+		button{
+			background-color: black;
+			color: white;
+			width: 100%;
+			height: 35px;
+			&:hover{
+				background-color: $main-gray;
+				color: black;
+			}
+		}
+	}
+}
+#contact{
+	input{
+		height: 35px;
+		width: 100%;
+		margin: 10px 5px;
+	}
+	textarea{
+		margin: 10px 5px;
+		width: 100%;
+	}
+	.sub{
+		background-color: black;
+		color: white;
+		width: 40%;
+		height: 35px;
+		&:hover{
+			background-color: $main-gray;
+			color: black;
+		}
+	}
+	.iconos{
+		padding-right: 45%;
+		a{
+			color: $main-gray;
+			font-size: 20px;
+			i{
+				padding: 5px;
+			}
+		}
+	}
+	p{
+		font-size: 13px;
+	}
+	h4{
+		font-size: 15px;
+	}
+	.dropdown{
+		border-bottom: 1px solid black;
+		button{
+			background-color: darken($main-gray, 60%);
+			padding: 3px 5px;
+		}
+		span{
+			color: white;
+		}
+		h3{
+			display: inline-block;
+			margin-left: 5px;
+			font-size: 18px;
+		}
+	}
+}
+footer{
+	background-color: $main-gray;
+	padding: 2% 0%;
+	p{
+		font-size: 13px;
+	}
+	a{
+		color: darken($main-gray,10%);
+		font-size: 20px;
+		i{
+			float: right;
+			padding: 7px;
+			&:hover{
+				color: #2119B6;
+			}
+		}
+	}
+}

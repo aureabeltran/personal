@@ -1,0 +1,63 @@
+*{
+	font-family: Raleway;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+li{
+	list-style: none;
+}
+.fondo-fixed{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section{
+	margin-bottom: 4%;
+}
+.hover-img{ 
+	border: 1px solid transparent;
+	h5{
+		font-weight: bold;
+	}
+	&:hover{
+		background-color: $main-gray;
+		border: 1px solid black;
+		p{
+			font-weight: bold;
+		}
+		img{
+			opacity: 0.5;
+		}
+	}
+	.iconos{
+		.fa-facebook{
+			@include colores-iconos(#2329C4);
+		}
+		.fa-twitter{
+			@include colores-iconos(#6ACADB);
+		}
+		.fa-google-plus{
+			@include colores-iconos(#D22121);
+		}
+		.fa-pinterest-p{
+			@include colores-iconos(#E51B1B);
+		}
+		.fa-linkedin{
+			@include colores-iconos(#6ACADB);
+		}
+	}
+}
+h1{
+	font-weight: bolder;
+	margin: 0px;
+}
+hr{
+	width: 15%;
+	float: left;
+	height: 5px;
+	background-color: black;
+}
